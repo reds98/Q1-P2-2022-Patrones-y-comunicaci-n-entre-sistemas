@@ -7,6 +7,7 @@ import { NavbarComponent } from './componentes/shared/navbar/navbar.component';
 import { HomeComponent } from './componentes/views/home/home.component';
 import { AboutComponent } from './componentes/views/about/about.component';
 
+import { InfoEmpleadosService } from './servicios/info-empleados.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +19,7 @@ import { AboutComponent } from './componentes/views/about/about.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [InfoEmpleadosService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
