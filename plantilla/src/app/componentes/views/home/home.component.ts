@@ -11,5 +11,8 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  saludar(nombre:string){
+    alert("La persona con el nombre "+nombre+" esta saludando")
+  }
 
 }
