@@ -8,6 +8,7 @@ import { Component, OnInit,Input,Output,EventEmitter } from '@angular/core';
 export class PersonaTarjetaComponent implements OnInit {
   @Input()nombre:string="Juan"
   @Input()edad:number=23
+  @Input() imagen=''
   @Output() personaSeleccionada = new EventEmitter<string>();
   constructor() { }
 

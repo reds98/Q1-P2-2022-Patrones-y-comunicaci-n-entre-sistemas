@@ -1,3 +1,1 @@
-<app-persona-tarjeta (personaSeleccionada)="saludar($event)" [nombre]="'Anita'" [edad]="23"></app-persona-tarjeta>
-<app-persona-tarjeta (personaSeleccionada)="saludar($event)" [nombre]="'Mario'" [edad]="34"></app-persona-tarjeta>
-<app-persona-tarjeta (personaSeleccionada)="saludar($event)"[nombre]="'Maria'" [edad]="50"></app-persona-tarjeta>
+<app-persona-tarjeta *ngFor="let persona of personas" (personaSeleccionada)="saludar($event)" [nombre]="persona.first_name" [edad]="persona.date_of_birth" [imagen]="persona.avatar"></app-persona-tarjeta>

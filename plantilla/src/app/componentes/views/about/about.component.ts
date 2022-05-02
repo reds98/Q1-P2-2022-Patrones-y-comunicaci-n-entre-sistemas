@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { InfoEmpleadosService } from 'src/app/servicios/info-empleados.service';
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
@@ -7,8 +6,8 @@ import { InfoEmpleadosService } from 'src/app/servicios/info-empleados.service';
 })
 export class AboutComponent implements OnInit {
   public nombrePersonas:string[]=[];
-  constructor(private servicio:InfoEmpleadosService) { 
-    this.nombrePersonas=servicio.getPersona()
+  constructor() { 
+  
     console.log(this.nombrePersonas)
   }
 
